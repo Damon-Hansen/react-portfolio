@@ -1,7 +1,7 @@
 # react-portfolio
 
 ## Live Link
-https://damon-hansen.github.io/react-portfolio/
+
 
 ## Description
 This is a Portfolio of my work created with React, Bootstrap-React, CSS, Node, and JavaScript.
