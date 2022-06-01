@@ -2,6 +2,7 @@ import { Row, Card, Col } from 'react-bootstrap'
 import foodFestival from './foodFestival.PNG'
 import pokeQuiz from './pokequiz.PNG'
 import socialNetworking from './socialNetworking.PNG'
+import gamerLabs from './gamerLabs.PNG'
 
 const projects = [
   {
@@ -31,11 +32,12 @@ const projects = [
   }
 },
 {
-  img: foodFestival,
-  name: 'Placeholder',
-  text: ['Placeholder'],
+  img: gamerLabs,
+  name: 'GamerLabs',
+  text: ['MongoDB', 'JavaScript', 'Express', 'React', 'Node', 'React-Bootstrap'],
   links: {
-
+    code: 'https://github.com/BKrayton815/GamerLabs',
+    live: 'https://gamerlabs.herokuapp.com/'
 }
 }
 ]
