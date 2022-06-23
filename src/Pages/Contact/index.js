@@ -1,35 +1,33 @@
-import { Form, Button, Container } from 'react-bootstrap'
 
 
 const Contact = () => {
-    return <Container>
-    <Form>
-    <Form.Group className="mb-3" controlId="formBasicInput">
-      <Form.Label>First and Last Name</Form.Label>
-      <Form.Control type="input" />
-      <Form.Text className="text-muted">
-      </Form.Text>
-    </Form.Group>
+  return (
+    <section>
+      <h2 className="mb-5">Contact Information:</h2>
+      <p className="mb-3">Email: damon.hansen0113@gmail.com</p>
+      <p className="mb-3">Phone: 816.752.2922</p>
+      <p className="mb-3">
+        LinkedIn:{' '}
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/damon-hansen-511031227/"
+        >
+          Damon Hansen
+        </a>
+      </p>
+      <p className="mb-3">
+        Github:{' '}
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/Damon-Hansen"
+        >
+          Damon Hansen
+        </a>
+      </p>
+    </section>
+  );
+};
 
-    <Form.Group className="mb-3" controlId="formBasicEmail">
-      <Form.Label>Email address</Form.Label>
-      <Form.Control type="email" />
-      <Form.Text className="text-muted">
-      </Form.Text>
-    </Form.Group>
-
-
-  
-    <Form.Group className="mb-3" controlId="formBasicInput">
-      <Form.Label>Message</Form.Label>
-      <Form.Control as="textarea" rows={3} />
-    </Form.Group>
-
-    <Button variant="primary" type="submit">
-      Submit
-    </Button>
-  </Form>
-  </Container>
-  };
-
-  export default Contact;
+export default Contact;

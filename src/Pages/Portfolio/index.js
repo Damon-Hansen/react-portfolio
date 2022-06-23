@@ -4,6 +4,7 @@ import pokeQuiz from './pokequiz.PNG'
 import socialNetworking from './socialNetworking.PNG'
 import gamerLabs from './gamerLabs.PNG'
 
+
 const projects = [
   {
     img: foodFestival,
@@ -41,28 +42,29 @@ const projects = [
 }
 }
 ]
-
 const Portfolio = () => {
-    return <Row xs={1} md={2} className="g-4">
-    {projects.map((project, idx) => (
-      <Col key={idx}>
-        <Card>
-          <Card.Img variant="top" src={project.img} />
-          <Card.Body>
-            <Card.Title>{project.name}</Card.Title>
-            <Card.Text>
-              Technologies Used:
-            {project.text.map((technologies, index) => (
-              <span key={technologies} className='m-3'>{technologies}</span>
-            ))}
-            </Card.Text>
-            <Card.Link as="card-link"><a href={project.links.code}>Github</a> </Card.Link>
-            <Card.Link as="card-link"><a href={project.links.live}>Live Link</a> </Card.Link>
-          </Card.Body>
-        </Card>
-      </Col>
-    ))}
-  </Row>
-  };
+  return <Row xs={1} md={2} className="g-4">
+  {projects.map((project, idx) => (
+    <Col key={idx} className=" mb-5">
+      <Card>
+        <Card.Img variant="top" src={project.img} />
+        <Card.Body>
+          <Card.Title>{project.name}</Card.Title>
+          <Card.Text>
+            Technologies Used:
+          {project.text.map((technologies, index) => (
+            <span key={technologies} className='m-3'>{technologies}</span>
+          ))}
+          </Card.Text>
+          <Card.Link as="card-link"><a href={project.links.code}>Github</a> </Card.Link>
+          <Card.Link as="card-link"><a href={project.links.live}>Live Link</a> </Card.Link>
+        </Card.Body>
+      </Card>
+    </Col>
+  ))}
+</Row>
+};
+
+
 
   export default Portfolio;
